@@ -13,6 +13,7 @@ namespace MVC_App.Models
         [Required]
         public decimal Price { get; set; }
         [Required]
+        [MinLength(10)]
         public string Description { get; set; } = string.Empty;
         [Required]
         public string Category { get; set; } = string.Empty;

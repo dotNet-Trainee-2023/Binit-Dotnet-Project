@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVC_App.Models
 {
-    [Table("Product")]
     public class Product
     {
         [Key]

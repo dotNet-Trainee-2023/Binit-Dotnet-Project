@@ -1,3 +1,4 @@
+using Entities;
 using Microsoft.EntityFrameworkCore;
 using MVC_App.Data;
 using MVC_App.Services;
@@ -12,7 +13,7 @@ namespace MVC_App
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<AppDbContext>(options =>
+            builder.Services.AddDbContext<DatabaseContext>(options =>
                 options.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
             builder.Services.AddScoped<IProductService, ProductService>();
 
